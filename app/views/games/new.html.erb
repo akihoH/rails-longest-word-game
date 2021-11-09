@@ -1,0 +1,11 @@
+<h1>New game</h1>
+<div>
+<% @letters.each do |letter| %>
+<%= letter %>
+<%end%>
+</div>
+
+<form action="score">
+  <input type="text" name="score" placeholder="Type a word">
+  <input type="submit" value="submit!">
+</form>
